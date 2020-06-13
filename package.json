@@ -1,6 +1,6 @@
 {
 	"name": "minimacd",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A compact implementation of Gerald Appel's MACD (Moving Average Convergence / Divergence) formula.",
 	"keywords": [
 		"finance",
