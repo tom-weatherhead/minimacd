@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="author" content="Tom Weatherhead" />
+        <meta name="description" content="minimacd Test Page" />
+		<meta name="keywords" content="minimacd test" />
+		<title>minimacd Test Page</title>
+
+		<meta http-equiv="Content-Security-Policy"
+		content="default-src 'self' file:;
+		script-src 'unsafe-inline'" />
+
+		<!-- <link rel="icon" type="image/png" href="assets/favicon.png" /> -->
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../dist/main.min.js"></script>
+
+		<script type="text/javascript">
+const array1 = [
+	// The first 19 primes, repeated twice.
+	2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
+	2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67
+];
+
+console.log('window.minimacd is', typeof window.minimacd, window.minimacd);
+console.log('array1 is', typeof array1, array1);
+
+const result1 = window.minimacd.macd(array1, 12, 26, 9, false);
+const result2 = window.minimacd.macd(array1, 12, 26, 9, true);
+
+console.log('macd(array) v1 is', typeof result1, result1);
+console.log('macd(array) v2 is', typeof result2, result2);
+		</script>
+	</body>
+</html>
