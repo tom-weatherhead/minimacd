@@ -4,8 +4,10 @@
 
 'use strict';
 
-const macdKaelZhang = require('macd');
-const d3fc = require('@d3fc/d3fc-technical-indicator');
+// const macdKaelZhang = require('macd');
+// const d3fc = require('@d3fc/d3fc-technical-indicator');
+import * as macdKaelZhang from 'macd';
+import * as d3fc from '@d3fc/d3fc-technical-indicator';
 
 import { macd } from '..';
 
@@ -63,7 +65,7 @@ describe('Library', () => {
 			for (let i = 0; i < array1.length; i++) {
 				// Arrange
 				const array = array1.slice(i);
-				const expectedResult1 = macdKaelZhang(
+				const expectedResult1 = macdKaelZhang.default(
 					array,
 					slow,
 					fast,

@@ -75,6 +75,7 @@ declare const define: any;
 		// const isNumber = (n: any) => (typeof n === 'number' || (typeof n === 'string' && n.trim())) && (n as number) - (n as number) + 1 >= 0;
 		const isNumber = (n: any) => !Number.isNaN(n); // 44 bytes smaller
 
+		/* eslint-disable no-mixed-spaces-and-tabs */
 		const mean = (arg: number[]) =>
 			arg.length <= 0
 				? NaN
@@ -82,6 +83,7 @@ declare const define: any;
 						(accumulator: number, n: number) => accumulator + n,
 						0
 				  ) / arg.length;
+		/* eslint-enable no-mixed-spaces-and-tabs */
 
 		const alpha = 2 / (period + 1); // The smoothing constant (Appel p. 134)
 		const seedLength = usePeriodAsSeedLength ? period : 1;

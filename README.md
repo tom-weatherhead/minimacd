@@ -11,10 +11,10 @@ A compact implementation of Gerald Appel's MACD (Moving Average Convergence / Di
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/tom-weatherhead/minimacd/blob/master/LICENSE)
 
-This implementation is:
+## Features
 
-- Compact: Less than 1000 bytes! (817 bytes as of 2020-04-17)
-- Self-contained: No dependencies
+- Self-contained: No run-time package dependencies!
+- Compact: Only 817 bytes!
 - Versatile: The Exponential Moving Average can be seeded in two ways
 
 ## ema() : Exponential Moving Average

@@ -1,0 +1,21 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"globals": {
+		"define": true,
+		"exports": true,
+		"global": true,
+		"module": true,
+		"require": true,
+		"self": true,
+		"window": true
+	}
+}
