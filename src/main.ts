@@ -15,6 +15,7 @@
 // pilfered, lifted, borrowed, or otherwise acquired from the npm module
 // 'is-windows' <https://github.com/jonschlinkert/is-windows>
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare const define: any;
 
 (function (factory) {
@@ -22,6 +23,7 @@ declare const define: any;
 	// X: TODO: If no object can be falsy, then try this:
 	// if (typeof exports === 'object' && typeof module !== 'undefined') {
 	// NO: null is falsy, but typeof null is 'object'
+	/* eslint-disable @typescript-eslint/no-explicit-any */
 	if (
 		typeof exports === 'object' &&
 		exports &&
@@ -41,6 +43,7 @@ declare const define: any;
 		// error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
 		this.minimacd = factory();
 	}
+	/* eslint-enable @typescript-eslint/no-explicit-any */
 })(function () {
 	// EMA: Exponential moving average
 	// See Gerald Appel's book 'Technical Analysis - Power Tools for Active Investors', chapter 6, pp. 134-137
@@ -73,7 +76,7 @@ declare const define: any;
 		// This prevents our code from interpreting the empty string as the number zero.
 
 		// const isNumber = (n: any) => (typeof n === 'number' || (typeof n === 'string' && n.trim())) && (n as number) - (n as number) + 1 >= 0;
-		const isNumber = (n: any) => !Number.isNaN(n); // 44 bytes smaller
+		const isNumber = (n: unknown) => !Number.isNaN(n); // 44 bytes smaller
 
 		/* eslint-disable no-mixed-spaces-and-tabs */
 		const mean = (arg: number[]) =>

@@ -9,48 +9,16 @@ import * as d3fc from '@d3fc/d3fc-technical-indicator';
 
 import { macd } from '..';
 
+interface IMacdAndSignalArrays {
+	macd: number[];
+	signal: number[];
+}
+
 const array1 = [
-	2,
-	3,
-	5,
-	7,
-	11,
-	13,
-	17,
-	19,
-	23,
-	29,
-	31,
-	37,
-	41,
-	43,
-	47,
-	53,
-	59,
-	61,
-	67,
+	2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
 	71,
 
-	2,
-	3,
-	5,
-	7,
-	11,
-	13,
-	17,
-	19,
-	23,
-	29,
-	31,
-	37,
-	41,
-	43,
-	47,
-	53,
-	59,
-	61,
-	67,
-	71
+	2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71
 ];
 
 const fast = 12,
@@ -91,10 +59,10 @@ test('@d3fc macd Test 1 Comprehensive', () => {
 		const array = array1.slice(i);
 		const resultD3fc1 = fnD3fc(array);
 		const expectedResultMacd1 = resultD3fc1.map(
-			(datum: any) => datum.macd
+			(datum: IMacdAndSignalArrays) => datum.macd
 		);
 		const expectedResultSignal1 = resultD3fc1.map(
-			(datum: any) => datum.signal
+			(datum: IMacdAndSignalArrays) => datum.signal
 		);
 
 		// Act

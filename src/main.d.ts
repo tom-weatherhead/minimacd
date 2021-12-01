@@ -3,6 +3,7 @@ export declare function ema(
 	period: number,
 	seedLength?: number
 ): number[];
+
 export declare function macd(
 	array: number[],
 	fastPeriod?: number,

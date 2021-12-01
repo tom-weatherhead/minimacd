@@ -5,7 +5,11 @@
 		"outDir": "./lib",
 		"declaration": false,
 		"strict": true,
-		"noImplicitThis": false
+		"noImplicitThis": false,
+		"types": [
+			"jest",
+			"node"
+		]
 	},
 	"include": [
 		"src"

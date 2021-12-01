@@ -1,20 +1,37 @@
 # minimacd
-A compact implementation of Gerald Appel's MACD (Moving Average Convergence / Divergence) formula.
+A versatile, compact (807 bytes) Javascript implementation of Gerald Appel's MACD (Moving Average Convergence / Divergence) formula.
 
-[![build status](https://secure.travis-ci.org/tom-weatherhead/minimacd.svg)](https://travis-ci.org/tom-weatherhead/minimacd)
-[![npm version](https://img.shields.io/npm/v/minimacd.svg)](https://www.npmjs.com/package/minimacd)
-[![npm total downloads](https://img.shields.io/npm/dt/minimacd.svg)](https://www.npmjs.com/package/minimacd)
-[![known vulnerabilities](https://snyk.io/test/github/tom-weatherhead/minimacd/badge.svg?targetFile=package.json&package-lock.json)](https://snyk.io/test/github/tom-weatherhead/minimacd?targetFile=package.json&package-lock.json)
-[![maintainability](https://api.codeclimate.com/v1/badges/0123456789abcdef0123/maintainability)](https://codeclimate.com/github/tom-weatherhead/minimacd/maintainability)
-[![test coverage](https://api.codeclimate.com/v1/badges/0123456789abcdef0123/test_coverage)](https://codeclimate.com/github/tom-weatherhead/minimacd/test_coverage)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/tom-weatherhead/minimacd/blob/master/LICENSE)
+Obligatory BadgeFest:
+
+[![git][git-badge-image]][git-url]
+[![github][github-badge-image]][github-url]
+[![npm][npm-badge-image]][npm-url]
+[![terminal][terminal-badge-image]][terminal-url]
+[![typescript][typescript-badge-image]][typescript-url]
+
+[![npm version][npm-version-badge-image]][npm-version-url]
+[![latest tag][latest-tag-badge-image]][latest-tag-url]
+[![npm total downloads][npm-total-downloads-badge-image]][npm-total-downloads-url]
+[![watchers][watchers-badge-image]][watchers-url]
+[![stars][stars-badge-image]][stars-url]
+[![issues][issues-badge-image]][issues-url]
+[![forks][forks-badge-image]][forks-url]
+[![contributors][contributors-badge-image]][contributors-url]
+[![branches][branches-badge-image]][branches-url]
+[![releases][releases-badge-image]][releases-url]
+[![commits][commits-badge-image]][commits-url]
+[![last commit][last-commit-badge-image]][last-commit-url]
+[![types][types-badge-image]][types-url]
+[![install size][install-size-badge-image]][install-size-url]
+[![known vulnerabilities][known-vulnerabilities-badge-image]][known-vulnerabilities-url]
+[![tested with jest][jest-badge-image]][jest-url]
+[![code style: prettier][prettier-badge-image]][prettier-url]
+[![license][license-badge-image]][license-url]
 
 ## Features
 
 - Self-contained: No run-time package dependencies!
-- Compact: Only 817 bytes!
+- Compact: Only 807 bytes!
 - Versatile: The Exponential Moving Average can be seeded in two ways
 
 ## ema() : Exponential Moving Average
@@ -77,3 +94,51 @@ A signal(n) value is the EMA (with period = n) of consecutive MACD values.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+[git-badge-image]: https://badgen.net/badge/icon/git?icon=git&label
+[git-url]: https://git-scm.com
+[github-badge-image]: https://badgen.net/badge/icon/github?icon=github&label
+[github-url]: https://github.com
+[npm-badge-image]: https://badgen.net/badge/icon/npm?icon=npm&label
+[npm-url]: https://npmjs.com
+[terminal-badge-image]: https://badgen.net/badge/icon/terminal?icon=terminal&label
+[terminal-url]: https://en.wikipedia.org/wiki/History_of_Unix
+[typescript-badge-image]: https://badgen.net/badge/icon/typescript?icon=typescript&label
+[typescript-url]: https://www.typescriptlang.org
+
+[npm-version-badge-image]: https://img.shields.io/npm/v/minimacd.svg
+[npm-version-url]: https://www.npmjs.com/package/minimacd
+[latest-tag-badge-image]: https://badgen.net/github/tag/tom-weatherhead/minimacd
+[latest-tag-url]: https://github.com/tom-weatherhead/minimacd/tags
+[npm-total-downloads-badge-image]: https://img.shields.io/npm/dt/minimacd.svg
+[npm-total-downloads-url]: https://www.npmjs.com/package/minimacd
+[watchers-badge-image]: https://badgen.net/github/watchers/tom-weatherhead/minimacd
+[watchers-url]: https://github.com/tom-weatherhead/minimacd/watchers
+[stars-badge-image]: https://badgen.net/github/stars/tom-weatherhead/minimacd
+[stars-url]: https://github.com/tom-weatherhead/minimacd/stargazers
+[issues-badge-image]: https://badgen.net/github/issues/tom-weatherhead/minimacd
+[issues-url]: https://github.com/tom-weatherhead/minimacd/issues
+[forks-badge-image]: https://badgen.net/github/forks/tom-weatherhead/minimacd
+[forks-url]: https://github.com/tom-weatherhead/minimacd/network/members
+[contributors-badge-image]: https://badgen.net/github/contributors/tom-weatherhead/minimacd
+[contributors-url]: https://github.com/tom-weatherhead/minimacd/graphs/contributors
+[branches-badge-image]: https://badgen.net/github/branches/tom-weatherhead/minimacd
+[branches-url]: https://github.com/tom-weatherhead/minimacd/branches
+[releases-badge-image]: https://badgen.net/github/releases/tom-weatherhead/minimacd
+[releases-url]: https://github.com/tom-weatherhead/minimacd/releases
+[commits-badge-image]: https://badgen.net/github/commits/tom-weatherhead/minimacd
+[commits-url]: https://github.com/tom-weatherhead/minimacd/commits/master
+[last-commit-badge-image]: https://badgen.net/github/last-commit/tom-weatherhead/minimacd
+[last-commit-url]: https://github.com/tom-weatherhead/minimacd
+[types-badge-image]: https://badgen.net/npm/types/minimacd
+[types-url]: https://badgen.net/npm/types/minimacd
+[install-size-badge-image]: https://badgen.net/packagephobia/install/minimacd
+[install-size-url]: https://badgen.net/packagephobia/install/minimacd
+[known-vulnerabilities-badge-image]: https://snyk.io/test/github/tom-weatherhead/minimacd/badge.svg?targetFile=package.json&package-lock.json
+[known-vulnerabilities-url]: https://snyk.io/test/github/tom-weatherhead/minimacd?targetFile=package.json&package-lock.json
+[jest-badge-image]: https://img.shields.io/badge/tested_with-jest-99424f.svg
+[jest-url]: https://github.com/facebook/jest
+[prettier-badge-image]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
+[prettier-url]: https://github.com/prettier/prettier
+[license-badge-image]: https://img.shields.io/github/license/mashape/apistatus.svg
+[license-url]: https://github.com/tom-weatherhead/minimacd/blob/master/LICENSE
