@@ -3,12 +3,14 @@ A versatile, compact (807 bytes) Javascript implementation of Gerald Appel's MAC
 
 Obligatory BadgeFest:
 
+[![circleci][circleci-badge-image]][circleci-url]
 [![git][git-badge-image]][git-url]
 [![github][github-badge-image]][github-url]
 [![npm][npm-badge-image]][npm-url]
 [![terminal][terminal-badge-image]][terminal-url]
 [![typescript][typescript-badge-image]][typescript-url]
 
+[![build status][build-status-badge-image]][build-status-url]
 [![npm version][npm-version-badge-image]][npm-version-url]
 [![npm total downloads][npm-total-downloads-badge-image]][npm-total-downloads-url]
 [![watchers][watchers-badge-image]][watchers-url]
@@ -94,6 +96,8 @@ A signal(n) value is the EMA (with period = n) of consecutive MACD values.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
+[circleci-badge-image]: https://badgen.net/badge/icon/circleci?icon=circleci&label
+[circleci-url]: https://circleci.com
 [git-badge-image]: https://badgen.net/badge/icon/git?icon=git&label
 [git-url]: https://git-scm.com
 [github-badge-image]: https://badgen.net/badge/icon/github?icon=github&label
@@ -105,6 +109,8 @@ A signal(n) value is the EMA (with period = n) of consecutive MACD values.
 [typescript-badge-image]: https://badgen.net/badge/icon/typescript?icon=typescript&label
 [typescript-url]: https://www.typescriptlang.org
 
+[build-status-badge-image]: https://circleci.com/gh/tom-weatherhead/minimacd.svg?style=shield
+[build-status-url]: https://circleci.com/gh/tom-weatherhead/minimacd
 [npm-version-badge-image]: https://img.shields.io/npm/v/minimacd.svg
 [npm-version-url]: https://www.npmjs.com/package/minimacd
 [latest-tag-badge-image]: https://badgen.net/github/tag/tom-weatherhead/minimacd
