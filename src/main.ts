@@ -141,11 +141,7 @@ declare const define: any;
 		const macdArray = fastEma.map(
 			(f: number, i: number): number => f - slowEma[i]
 		);
-		const signalArray = ema(
-			macdArray,
-			signalPeriod,
-			usePeriodAsSeedLength
-		);
+		const signalArray = ema(macdArray, signalPeriod, usePeriodAsSeedLength);
 
 		return [macdArray, signalArray];
 	}

@@ -10,7 +10,6 @@ Obligatory BadgeFest:
 [![typescript][typescript-badge-image]][typescript-url]
 
 [![npm version][npm-version-badge-image]][npm-version-url]
-[![latest tag][latest-tag-badge-image]][latest-tag-url]
 [![npm total downloads][npm-total-downloads-badge-image]][npm-total-downloads-url]
 [![watchers][watchers-badge-image]][watchers-url]
 [![stars][stars-badge-image]][stars-url]
